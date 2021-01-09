@@ -137,5 +137,5 @@ memo)
   stream.forEach(str -> System.out.print(str + " ")); 
     //Arrays.stream(arr).forEach(str -> System.out.print(str + " "));로 줄여서 사용도 가능.
 
-출처 : https://codedragon.tistory.com/8087, https://www.geeksforgeeks.org, https://m.blog.naver.com/roropoly1/221140156345
+출처 : [https://codedragon.tistory.com/8087, https://www.geeksforgeeks.org], [https://m.blog.naver.com/roropoly1/221140156345]
 *************************************************************************
