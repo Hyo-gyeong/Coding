@@ -1,4 +1,4 @@
-예전에 풀려고 시도해싸가 실패한 문제를 다시 풀어봤다
+예전에 풀려고 시도가 실패한 문제를 다시 풀어봤다
 import java.util.*;
 class Solution {
     public int solution(int[][] board, int[] moves) {
