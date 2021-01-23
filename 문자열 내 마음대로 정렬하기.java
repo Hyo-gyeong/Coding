@@ -109,7 +109,7 @@ class Solution {
           @Override
           public int compare(String s1, String s2){
               if(s1.charAt(n) > s2.charAt(n)) return 1;
-              else if(s1.charAt(n) == s2.charAt(n)) return s1.compareTo(s2);
+              else if(s1.charAt(n) == s2.charAt(n)) return s1.compareTo(s2); 
               else if(s1.charAt(n) < s2.charAt(n)) return -1;
               else return 0;
           }
@@ -119,4 +119,6 @@ class Solution {
 }
 
 ****************************************************************************
+memo)
+1. https://gmlwjd9405.github.io/2018/09/06/java-comparable-and-comparator.html
 ****************************************************************************
