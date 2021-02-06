@@ -3,8 +3,8 @@ class Solution {
     public String solution(String s) {
         String[] tmp = new String[s.length()];
         for (int i = 0; i < s.length(); i++)
-            tmp[i] = Character.toString(s.charAt(i));
-        Arrays.sort(tmp, Collections.reverseOrder()); //array내림차순 정렬
+            tmp[i] = Character.toString(s.charAt(i)); //1.Collections.reverseOrder()사용하기위해 String type으로(참조형)
+        Arrays.sort(tmp, Collections.reverseOrder()); //2.array내림차순 정렬
         String answer = "";
         for (int i = 0; i < s.length(); i++)
             answer += tmp[i];
@@ -15,7 +15,11 @@ class Solution {
 
 ------------------------------------------------------------------------
 memo)
-sort()내부에 정렬할 배열과 내림차순 여부 쓸 수 있음.
+1.Collections.reverseOrder()
+  사용 조건 : https://yahwang.github.io/posts/61
+  merge sort : https://stackabuse.com/merge-sort-in-java/
+  String포함 java 타입 정리 : https://jdm.kr/blog/213
+2.sort()내부에 정렬할 배열과 내림차순 여부 쓸 수 있음.
 참고 https://www.geeksforgeeks.org/arrays-sort-in-java-with-examples/
 ------------------------------------------------------------------------
 
@@ -24,7 +28,7 @@ import java.util.*;
 class Solution {
     public String solution(String s) {
         char[] ch = s.toCharArray();//1.
-        Arrays.sort(ch);//2.이걸 사용하려고 1번과 같이 처리
+        Arrays.sort(ch);//2.이걸 사용하려고 1.과 같이 처리
         StringBuffer st = new StringBuffer(String.valueOf(ch));//3.valueOf() method
                                                               //4.StringBuffer
         st.reverse();
@@ -34,7 +38,7 @@ class Solution {
 ------------------------------------------------------------------------
 memo)
 1.String into array of chars
-2.public static void sort(int[] arr, int from_Index, int to_Index)
+2.public static void sort(arr, int from_Index, int to_Index)
   arr - the array to be sorted
   from_Index - the index of the first element, inclusive, to be sorted
   to_Index - the index of the last element, exclusive, to be sorted
